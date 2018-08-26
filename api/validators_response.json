@@ -1,0 +1,1105 @@
+{
+  "code": 0,
+  "result": [
+    {
+      "accumulated_reward": "232178464428581471018",
+      "absent_times": 0,
+      "candidate": {
+        "candidate_address": "Mxee81347211c72524338f9680072af90744333146",
+        "total_stake": "2000297847656749197146836",
+        "pub_key": "Mp4ae1ee73e6136c85b0ca933a9a1347758a334885f10b3238398a67ac2eb153b8",
+        "commission": 10,
+        "stakes": [
+          {
+            "owner": "Mxee81347211c72524338f9680072af90744333146",
+            "coin": "MNT",
+            "value": "2000000000000000000000000",
+            "bip_value": "2000000000000000000000000"
+          },
+          {
+            "owner": "Mx072175eaaa18a211afefa6b623101813b9dcd000",
+            "coin": "MNT",
+            "value": "200000000000000000000",
+            "bip_value": "200000000000000000000"
+          },
+          {
+            "owner": "Mx072175eaaa18a211afefa6b623101813b9dcd000",
+            "coin": "SHSCOIN",
+            "value": "500000000000000000000",
+            "bip_value": "97847656749197146836"
+          }
+        ],
+        "created_at_block": 1,
+        "status": 2
+      }
+    },
+    {
+      "accumulated_reward": "232143892671351071499",
+      "absent_times": 0,
+      "candidate": {
+        "candidate_address": "Mxee81347211c72524338f9680072af90744333146",
+        "total_stake": "2000000000000000000000000",
+        "pub_key": "Mp738da41ba6a7b7d69b7294afa158b89c5a1b410cbf0c2443c85c5fe24ad1dd1c",
+        "commission": 100,
+        "stakes": [
+          {
+            "owner": "Mxee81347211c72524338f9680072af90744333146",
+            "coin": "MNT",
+            "value": "2000000000000000000000000",
+            "bip_value": "2000000000000000000000000"
+          }
+        ],
+        "created_at_block": 165,
+        "status": 2
+      }
+    },
+    {
+      "accumulated_reward": "232143892671351071499",
+      "absent_times": 0,
+      "candidate": {
+        "candidate_address": "Mxee81347211c72524338f9680072af90744333146",
+        "total_stake": "2000000000000000000000000",
+        "pub_key": "Mp9e13f2f5468dd782b316444fbd66595e13dba7d7bd3efa1becd50b42045f58c6",
+        "commission": 100,
+        "stakes": [
+          {
+            "owner": "Mxee81347211c72524338f9680072af90744333146",
+            "coin": "MNT",
+            "value": "2000000000000000000000000",
+            "bip_value": "2000000000000000000000000"
+          }
+        ],
+        "created_at_block": 198,
+        "status": 2
+      }
+    },
+    {
+      "accumulated_reward": "232143892671351071499",
+      "absent_times": 0,
+      "candidate": {
+        "candidate_address": "Mxee81347211c72524338f9680072af90744333146",
+        "total_stake": "2000000000000000000000000",
+        "pub_key": "Mp6f16c1ff21a6fb946aaed0f4c1fcca272b72fd904988f91d3883282b8ae31ba2",
+        "commission": 100,
+        "stakes": [
+          {
+            "owner": "Mxee81347211c72524338f9680072af90744333146",
+            "coin": "MNT",
+            "value": "2000000000000000000000000",
+            "bip_value": "2000000000000000000000000"
+          }
+        ],
+        "created_at_block": 174,
+        "status": 2
+      }
+    },
+    {
+      "accumulated_reward": "144790127053954306905",
+      "absent_times": 0,
+      "candidate": {
+        "candidate_address": "Mxe6732a97c6445edb0becf685dd92655bb4a1b838",
+        "total_stake": "1247417068679342328542402",
+        "pub_key": "Mp34d190f3bff71b550c15f048ce685b83127f55f4c502029cc37aab0d1c7e88ee",
+        "commission": 10,
+        "stakes": [
+          {
+            "owner": "Mxe6732a97c6445edb0becf685dd92655bb4a1b838",
+            "coin": "MNT",
+            "value": "650887000000000000000000",
+            "bip_value": "650887000000000000000000"
+          },
+          {
+            "owner": "Mx6eadf5badeda8f76fc35e0c4d7f7fbc00fe34315",
+            "coin": "MNT",
+            "value": "688000000000000000000",
+            "bip_value": "688000000000000000000"
+          },
+          {
+            "owner": "Mx2e53af00cfdaad73c72bce926622f43816cfbbe5",
+            "coin": "MNT",
+            "value": "1800000000000000000000",
+            "bip_value": "1800000000000000000000"
+          },
+          {
+            "owner": "Mx5edf1b67ce7d9587a17be2e3e6b547a4b18cc5d9",
+            "coin": "MNT",
+            "value": "200000000000000000000",
+            "bip_value": "200000000000000000000"
+          },
+          {
+            "owner": "Mx072175eaaa18a211afefa6b623101813b9dcd000",
+            "coin": "MNT",
+            "value": "200000000000000000000",
+            "bip_value": "200000000000000000000"
+          },
+          {
+            "owner": "Mxe6732a97c6445edb0becf685dd92655bb4a1b838",
+            "coin": "MINTERONE",
+            "value": "5000000000000000000",
+            "bip_value": "27015971526674844129457"
+          },
+          {
+            "owner": "Mx402ae571baf665c72091db01b86ed5b6cf767187",
+            "coin": "MNT",
+            "value": "4500000000000000000000",
+            "bip_value": "4500000000000000000000"
+          },
+          {
+            "owner": "Mx7406991dea2f00b51e59057b291b04459cb7b233",
+            "coin": "MNT",
+            "value": "100000000000000000000",
+            "bip_value": "100000000000000000000"
+          },
+          {
+            "owner": "Mx3c57a889ec01714f26477f3758ee3b5c08bcabd3",
+            "coin": "MNT",
+            "value": "65000000000000000000",
+            "bip_value": "65000000000000000000"
+          },
+          {
+            "owner": "Mx601609b85ee21b9493dffbca1079c74d47b75f2a",
+            "coin": "MNT",
+            "value": "60000000000000000000",
+            "bip_value": "60000000000000000000"
+          },
+          {
+            "owner": "Mx567f9dbec298d387344b7001e0ff6c8bb7b51d6f",
+            "coin": "MNT",
+            "value": "555555000000000000000000",
+            "bip_value": "555555000000000000000000"
+          },
+          {
+            "owner": "Mxd9f04f33b1df0ca3afb3167915dc9b054a2aac0e",
+            "coin": "MNT",
+            "value": "1050000000000000000000",
+            "bip_value": "1050000000000000000000"
+          },
+          {
+            "owner": "Mxc39b434c4d5b9cf6cca5134378c54a45fb143033",
+            "coin": "MNT",
+            "value": "35000000000000000000",
+            "bip_value": "35000000000000000000"
+          },
+          {
+            "owner": "Mx9bbcfa65840813826d4f1de6f13374b32fe8883f",
+            "coin": "MNT",
+            "value": "100000000000000000000",
+            "bip_value": "100000000000000000000"
+          },
+          {
+            "owner": "Mxf2888a89e028bf5165c022c7cae927bfe369443d",
+            "coin": "MNT",
+            "value": "10000000000000000000",
+            "bip_value": "10000000000000000000"
+          },
+          {
+            "owner": "Mx0e20aefe1edb38a607f6692ec60963c26ac308ec",
+            "coin": "MNT",
+            "value": "100000000000000000000",
+            "bip_value": "100000000000000000000"
+          },
+          {
+            "owner": "Mx8b918f3009e5f8fc12b6f38da6975809e11f9fdc",
+            "coin": "MNT",
+            "value": "500000000000000000000",
+            "bip_value": "500000000000000000000"
+          },
+          {
+            "owner": "Mxd78ea777ce6a879343fe4d72667ac3444d942624",
+            "coin": "MNT",
+            "value": "500000000000000000000",
+            "bip_value": "500000000000000000000"
+          },
+          {
+            "owner": "Mxf14cf0d97df2b7e4ae6d555b3593f2c3e5049a3e",
+            "coin": "MNT",
+            "value": "750000000000000000000",
+            "bip_value": "750000000000000000000"
+          },
+          {
+            "owner": "Mxdbb073a733065f7f849023fa437f09a904d678a8",
+            "coin": "MNT",
+            "value": "500000000000000000000",
+            "bip_value": "500000000000000000000"
+          },
+          {
+            "owner": "Mx5edf1b67ce7d9587a17be2e3e6b547a4b18cc5d9",
+            "coin": "MINTERONE",
+            "value": "500000000000000000",
+            "bip_value": "2701597152667484412945"
+          },
+          {
+            "owner": "Mxb4c613dc3eb3854a509c7c8b8f15ea4c5712efff",
+            "coin": "MNT",
+            "value": "99500000000000000000",
+            "bip_value": "99500000000000000000"
+          }
+        ],
+        "created_at_block": 7164,
+        "status": 2
+      }
+    },
+    {
+      "accumulated_reward": "144301472443066729125",
+      "absent_times": 0,
+      "candidate": {
+        "candidate_address": "Mx89f5395a03847826d6b48bb02dbde64376945a20",
+        "total_stake": "1243207140041853923460728",
+        "pub_key": "Mpb54df5b1abc46ecdb08935d6fc2f4526eba27caf1b6f2f87b3477ef3119bc0fd",
+        "commission": 10,
+        "stakes": [
+          {
+            "owner": "Mx89f5395a03847826d6b48bb02dbde64376945a20",
+            "coin": "MNT",
+            "value": "236209760000000000000000",
+            "bip_value": "236209760000000000000000"
+          },
+          {
+            "owner": "Mx7b9322ce6e71ba0892a2d22b0fcfdb6630e0ea6a",
+            "coin": "MNT",
+            "value": "142287750000000000000000",
+            "bip_value": "142287750000000000000000"
+          },
+          {
+            "owner": "Mxd847073ef61b23aafbbad08cfc21e476f855798a",
+            "coin": "MNT",
+            "value": "165968000000000000000000",
+            "bip_value": "165968000000000000000000"
+          },
+          {
+            "owner": "Mx07f3f86a78749cdd2b6a46cc6d30ac17dda87eb6",
+            "coin": "MNT",
+            "value": "8182610000000000000000",
+            "bip_value": "8182610000000000000000"
+          },
+          {
+            "owner": "Mx2839b107fa2cbe1fc58236427986f4ca40c796eb",
+            "coin": "MNT",
+            "value": "200000000000000000000",
+            "bip_value": "200000000000000000000"
+          },
+          {
+            "owner": "Mx4d8f958a54c05ed1866c15f9dd5ce037b979cca3",
+            "coin": "MNT",
+            "value": "5940000000000000000",
+            "bip_value": "5940000000000000000"
+          },
+          {
+            "owner": "Mx7b9322ce6e71ba0892a2d22b0fcfdb6630e0ea6a",
+            "coin": "MNST",
+            "value": "277754400000000000000000",
+            "bip_value": "39748554381069489354396"
+          },
+          {
+            "owner": "Mxc9cffcc321f5801aa2384f82510fa4f70e9094b6",
+            "coin": "MNST",
+            "value": "98998020000000000000000",
+            "bip_value": "14167293773161487013333"
+          },
+          {
+            "owner": "Mx1a7099036fb4a79b62c5a4d7575e225c790bd932",
+            "coin": "MNST",
+            "value": "49499010000000000000000",
+            "bip_value": "7083646886580743506666"
+          },
+          {
+            "owner": "Mx13f3da5b63d2f120f5a3e163c1cccdc7e898a19c",
+            "coin": "MNT",
+            "value": "1395000000000000000000",
+            "bip_value": "1395000000000000000000"
+          },
+          {
+            "owner": "Mx07f3f86a78749cdd2b6a46cc6d30ac17dda87eb6",
+            "coin": "MNST",
+            "value": "49499010000000000000000",
+            "bip_value": "7083646886580743506666"
+          },
+          {
+            "owner": "Mxd847073ef61b23aafbbad08cfc21e476f855798a",
+            "coin": "MNST",
+            "value": "48510000000000000000",
+            "bip_value": "6942112791104950735"
+          },
+          {
+            "owner": "Mxc9cffcc321f5801aa2384f82510fa4f70e9094b6",
+            "coin": "MNT",
+            "value": "7700300000000000000000",
+            "bip_value": "7700300000000000000000"
+          },
+          {
+            "owner": "Mxb168b0f5cd7c45144aed1ec73427446f9139467b",
+            "coin": "MNST",
+            "value": "49500000000000000000000",
+            "bip_value": "7083788562351990546477"
+          },
+          {
+            "owner": "Mx567f9dbec298d387344b7001e0ff6c8bb7b51d6f",
+            "coin": "MINTERONE",
+            "value": "7920000000000000000",
+            "bip_value": "42793298898252953101060"
+          },
+          {
+            "owner": "Mxc86285b67bf72c3596a9fb62ee0d84d0d008020f",
+            "coin": "MNST",
+            "value": "57933000000000000000000",
+            "bip_value": "8290608541065411481395"
+          },
+          {
+            "owner": "Mx567f9dbec298d387344b7001e0ff6c8bb7b51d6f",
+            "coin": "MNT",
+            "value": "555000000000000000000000",
+            "bip_value": "555000000000000000000000"
+          }
+        ],
+        "created_at_block": 590,
+        "status": 2
+      }
+    },
+    {
+      "accumulated_reward": "69429388315480616721",
+      "absent_times": 0,
+      "candidate": {
+        "candidate_address": "Mx6eadf5badeda8f76fc35e0c4d7f7fbc00fe34315",
+        "total_stake": "598158215721596820634446",
+        "pub_key": "Mp8f053f3802d33f5e7092bb01ca99ae77606f4faf759c72560d5ee69b8e191a56",
+        "commission": 10,
+        "stakes": [
+          {
+            "owner": "Mx6eadf5badeda8f76fc35e0c4d7f7fbc00fe34315",
+            "coin": "MNT",
+            "value": "153782000000000000000000",
+            "bip_value": "153782000000000000000000"
+          },
+          {
+            "owner": "Mx072175eaaa18a211afefa6b623101813b9dcd000",
+            "coin": "MNT",
+            "value": "600000000000000000000",
+            "bip_value": "600000000000000000000"
+          },
+          {
+            "owner": "Mx7ab273cf52669cb0416bb6a87f72e66099e36eb5",
+            "coin": "MNT",
+            "value": "99000000000000000000",
+            "bip_value": "99000000000000000000"
+          },
+          {
+            "owner": "Mx2e53af00cfdaad73c72bce926622f43816cfbbe5",
+            "coin": "MNT",
+            "value": "6000000000000000000000",
+            "bip_value": "6000000000000000000000"
+          },
+          {
+            "owner": "Mxd9f04f33b1df0ca3afb3167915dc9b054a2aac0e",
+            "coin": "MNT",
+            "value": "6000000000000000000000",
+            "bip_value": "6000000000000000000000"
+          },
+          {
+            "owner": "Mx567f9dbec298d387344b7001e0ff6c8bb7b51d6f",
+            "coin": "MNT",
+            "value": "10000000000000000000000",
+            "bip_value": "10000000000000000000000"
+          },
+          {
+            "owner": "Mx23314b4f4a45aa0f2ff8c7d41e04d46a864ba765",
+            "coin": "MNT",
+            "value": "30300000000000000000000",
+            "bip_value": "30300000000000000000000"
+          },
+          {
+            "owner": "Mx5edf1b67ce7d9587a17be2e3e6b547a4b18cc5d9",
+            "coin": "MNT",
+            "value": "200000000000000000000",
+            "bip_value": "200000000000000000000"
+          },
+          {
+            "owner": "Mx77a1b1b1476bba289cb8f6a1bf2c681210eb4996",
+            "coin": "MNT",
+            "value": "90000000000000000000",
+            "bip_value": "90000000000000000000"
+          },
+          {
+            "owner": "Mx7447bd8fe585c782a047f3272936f52460f8d37c",
+            "coin": "MNT",
+            "value": "100000000000000000000",
+            "bip_value": "100000000000000000000"
+          },
+          {
+            "owner": "Mx2d62eec579db7a6f7789eb4739087ca2ccdb5ecf",
+            "coin": "MNT",
+            "value": "2996000000000000000000",
+            "bip_value": "2996000000000000000000"
+          },
+          {
+            "owner": "Mx97a234997cd4fbe280ed3f1e551708636f5b3c7a",
+            "coin": "MNT",
+            "value": "1226900000000000000000",
+            "bip_value": "1226900000000000000000"
+          },
+          {
+            "owner": "Mx23314b4f4a45aa0f2ff8c7d41e04d46a864ba765",
+            "coin": "SHSCOIN",
+            "value": "292666000000000000000000",
+            "bip_value": "57273364620321064352226"
+          },
+          {
+            "owner": "Mx6eadf5badeda8f76fc35e0c4d7f7fbc00fe34315",
+            "coin": "SHSCOIN",
+            "value": "660050000000000000000000",
+            "bip_value": "129168691674615153539143"
+          },
+          {
+            "owner": "Mx6eadf5badeda8f76fc35e0c4d7f7fbc00fe34315",
+            "coin": "SBSCOIN",
+            "value": "154330000000000000000",
+            "bip_value": "153262600360370897"
+          },
+          {
+            "owner": "Mx8d3c1212512bbb7e754e49e8d5880fc753a92762",
+            "coin": "SHSCOIN",
+            "value": "359245000000000000000000",
+            "bip_value": "70302562897730658030709"
+          },
+          {
+            "owner": "Mxaff9920e98e39cebb4a9aea959aa252af3a4894c",
+            "coin": "MNT",
+            "value": "5798000000000000000000",
+            "bip_value": "5798000000000000000000"
+          },
+          {
+            "owner": "Mxaff9920e98e39cebb4a9aea959aa252af3a4894c",
+            "coin": "SHSCOIN",
+            "value": "31800000000000000000000",
+            "bip_value": "6223110969248938538814"
+          },
+          {
+            "owner": "Mxdbb073a733065f7f849023fa437f09a904d678a8",
+            "coin": "MNT",
+            "value": "2500000000000000000000",
+            "bip_value": "2500000000000000000000"
+          },
+          {
+            "owner": "Mxd78ea777ce6a879343fe4d72667ac3444d942624",
+            "coin": "MNT",
+            "value": "1000000000000000000000",
+            "bip_value": "1000000000000000000000"
+          },
+          {
+            "owner": "Mxf14cf0d97df2b7e4ae6d555b3593f2c3e5049a3e",
+            "coin": "MNT",
+            "value": "1250000000000000000000",
+            "bip_value": "1250000000000000000000"
+          },
+          {
+            "owner": "Mx4c36170bc6a26271d7f11174f66d002861477c48",
+            "coin": "SHSCOIN",
+            "value": "50000000000000000000000",
+            "bip_value": "9784765674919714683671"
+          },
+          {
+            "owner": "Mx8b918f3009e5f8fc12b6f38da6975809e11f9fdc",
+            "coin": "MNT",
+            "value": "1500000000000000000000",
+            "bip_value": "1500000000000000000000"
+          },
+          {
+            "owner": "Mx402ae571baf665c72091db01b86ed5b6cf767187",
+            "coin": "MNT",
+            "value": "13000000000000000000000",
+            "bip_value": "13000000000000000000000"
+          },
+          {
+            "owner": "Mx402ae571baf665c72091db01b86ed5b6cf767187",
+            "coin": "SHSCOIN",
+            "value": "10000000000000000000000",
+            "bip_value": "1956953134983942936734"
+          },
+          {
+            "owner": "Mx5edf1b67ce7d9587a17be2e3e6b547a4b18cc5d9",
+            "coin": "SHSCOIN",
+            "value": "2554314400000000000000",
+            "bip_value": "499867357281462921207"
+          },
+          {
+            "owner": "Mx7a7fe8e9550aea9d4e656cdf205118a97da0cb30",
+            "coin": "SHSCOIN",
+            "value": "7883000000000000000000",
+            "bip_value": "1542666156307842217027"
+          },
+          {
+            "owner": "Mx7a7fe8e9550aea9d4e656cdf205118a97da0cb30",
+            "coin": "MNT",
+            "value": "3346000000000000000000",
+            "bip_value": "3346000000000000000000"
+          },
+          {
+            "owner": "Mx7160868906cdc2c2f6bb2c2a6c0bf5f1b888d129",
+            "coin": "MNT",
+            "value": "98000000000000000000",
+            "bip_value": "98000000000000000000"
+          },
+          {
+            "owner": "Mx953f2b35ac5962c0cf8e4e7b5fc69eaba31cf440",
+            "coin": "MNT",
+            "value": "900000000000000000",
+            "bip_value": "900000000000000000"
+          },
+          {
+            "owner": "Mx236e6963d8d0a574cca07ac277fe0303c725a586",
+            "coin": "MNT",
+            "value": "400000000000000000000",
+            "bip_value": "400000000000000000000"
+          },
+          {
+            "owner": "Mx77a1b1b1476bba289cb8f6a1bf2c681210eb4996",
+            "coin": "SHSCOIN",
+            "value": "1000000000000000000000",
+            "bip_value": "195695313498394293673"
+          },
+          {
+            "owner": "Mx7447bd8fe585c782a047f3272936f52460f8d37c",
+            "coin": "SHSCOIN",
+            "value": "100000000000000000000",
+            "bip_value": "19569531349839429367"
+          },
+          {
+            "owner": "Mx072175eaaa18a211afefa6b623101813b9dcd000",
+            "coin": "SHSCOIN",
+            "value": "5000000000000000000000",
+            "bip_value": "978476567491971468367"
+          },
+          {
+            "owner": "Mx3a879ef658f9fbee329250a2cac6efd27001127f",
+            "coin": "SHSCOIN",
+            "value": "230000000000000000000",
+            "bip_value": "45009922104630687544"
+          },
+          {
+            "owner": "Mx236e6963d8d0a574cca07ac277fe0303c725a586",
+            "coin": "SHSCOIN",
+            "value": "11000000000000000000000",
+            "bip_value": "2152648448482337230407"
+          },
+          {
+            "owner": "Mxee81347211c72524338f9680072af90744333146",
+            "coin": "MNT",
+            "value": "5000000000000000000000",
+            "bip_value": "5000000000000000000000"
+          },
+          {
+            "owner": "Mx17b36e2d91afd8cbd43c75ef2c3dd5de4d281805",
+            "coin": "SHSCOIN",
+            "value": "7248000000000000000000",
+            "bip_value": "1418399632236361840544"
+          },
+          {
+            "owner": "Mxa5adb48aea4b841d181ef4a540b13681802b8c45",
+            "coin": "SHSCOIN",
+            "value": "17101000000000000000000",
+            "bip_value": "3346585556136040816109"
+          },
+          {
+            "owner": "Mxa5adb48aea4b841d181ef4a540b13681802b8c45",
+            "coin": "MNT",
+            "value": "2590000000000000000000",
+            "bip_value": "2590000000000000000000"
+          },
+          {
+            "owner": "Mx3c57a889ec01714f26477f3758ee3b5c08bcabd3",
+            "coin": "SHSCOIN",
+            "value": "2700000000000000000000",
+            "bip_value": "528377346445664592918"
+          },
+          {
+            "owner": "Mxb6fc0df87b473c67e9348b1e4352747123b03c75",
+            "coin": "MNT",
+            "value": "213000000000000000000",
+            "bip_value": "213000000000000000000"
+          },
+          {
+            "owner": "Mx17b36e2d91afd8cbd43c75ef2c3dd5de4d281805",
+            "coin": "MNT",
+            "value": "702000000000000000000",
+            "bip_value": "702000000000000000000"
+          },
+          {
+            "owner": "Mxb6fc0df87b473c67e9348b1e4352747123b03c75",
+            "coin": "SHSCOIN",
+            "value": "1000000000000000000",
+            "bip_value": "195695313498394293"
+          },
+          {
+            "owner": "Mxdbb073a733065f7f849023fa437f09a904d678a8",
+            "coin": "SHSCOIN",
+            "value": "25000000000000000000000",
+            "bip_value": "4892382837459857341835"
+          },
+          {
+            "owner": "Mx99812fff9a8952e8e4359ec02cd8f0f33c6b5441",
+            "coin": "MNT",
+            "value": "2146000000000000000000",
+            "bip_value": "2146000000000000000000"
+          },
+          {
+            "owner": "Mx99812fff9a8952e8e4359ec02cd8f0f33c6b5441",
+            "coin": "MNST",
+            "value": "189000000000000000000",
+            "bip_value": "27047192692616691177"
+          },
+          {
+            "owner": "Mxb168b0f5cd7c45144aed1ec73427446f9139467b",
+            "coin": "SHSCOIN",
+            "value": "2004380000000000000000",
+            "bip_value": "392247772469911554353"
+          },
+          {
+            "owner": "Mx601609b85ee21b9493dffbca1079c74d47b75f2a",
+            "coin": "MNT",
+            "value": "50000000000000000000",
+            "bip_value": "50000000000000000000"
+          },
+          {
+            "owner": "Mxb6cfebb71afb7630c020f727a1785083b3086782",
+            "coin": "MNT",
+            "value": "100000000000000000000",
+            "bip_value": "100000000000000000000"
+          },
+          {
+            "owner": "Mx7629f5063404f2a5d1784a20d564e405c1946f64",
+            "coin": "MNT",
+            "value": "377000000000000000000",
+            "bip_value": "377000000000000000000"
+          },
+          {
+            "owner": "Mx7629f5063404f2a5d1784a20d564e405c1946f64",
+            "coin": "SHSCOIN",
+            "value": "50000000000000000000",
+            "bip_value": "9784765674919714683"
+          },
+          {
+            "owner": "Mx97a234997cd4fbe280ed3f1e551708636f5b3c7a",
+            "coin": "SHSCOIN",
+            "value": "94910000000000000000000",
+            "bip_value": "18573442204132602412544"
+          },
+          {
+            "owner": "Mx8d3c1212512bbb7e754e49e8d5880fc753a92762",
+            "coin": "MNT",
+            "value": "36947000000000000000000",
+            "bip_value": "36947000000000000000000"
+          },
+          {
+            "owner": "Mxffac6e1d28f62d140a49fd7c28281510d495aea9",
+            "coin": "MNT",
+            "value": "199000000000000000000",
+            "bip_value": "199000000000000000000"
+          },
+          {
+            "owner": "Mxffac6e1d28f62d140a49fd7c28281510d495aea9",
+            "coin": "SHSCOIN",
+            "value": "600000000000000000000",
+            "bip_value": "117417188099036576204"
+          },
+          {
+            "owner": "Mx68e404a3dc9344e24006b24c3c8a7ce8d69f628b",
+            "coin": "MNT",
+            "value": "98000000000000000000",
+            "bip_value": "98000000000000000000"
+          }
+        ],
+        "created_at_block": 1519,
+        "status": 2
+      }
+    },
+    {
+      "accumulated_reward": "9677654421210324693",
+      "absent_times": 0,
+      "candidate": {
+        "candidate_address": "Mx23314b4f4a45aa0f2ff8c7d41e04d46a864ba765",
+        "total_stake": "111440322820810216842846",
+        "pub_key": "Mp17d8e8d5b4c647142653d7451844bb45e4bc79f372cd9ab0eaae896cb698c0a9",
+        "commission": 10,
+        "stakes": [
+          {
+            "owner": "Mx23314b4f4a45aa0f2ff8c7d41e04d46a864ba765",
+            "coin": "MNT",
+            "value": "111440322820810216842846",
+            "bip_value": "111440322820810216842846"
+          }
+        ],
+        "created_at_block": 3342,
+        "status": 2
+      }
+    },
+    {
+      "accumulated_reward": "9445506464846965113",
+      "absent_times": 0,
+      "candidate": {
+        "candidate_address": "Mx7629f5063404f2a5d1784a20d564e405c1946f64",
+        "total_stake": "81376308083358310379348",
+        "pub_key": "Mp09197dabf062bc6b5e21f24498555e989bba2b2503012e2000ff8b59ee9a5097",
+        "commission": 10,
+        "stakes": [
+          {
+            "owner": "Mx7629f5063404f2a5d1784a20d564e405c1946f64",
+            "coin": "MNT",
+            "value": "71945000000000000000000",
+            "bip_value": "71945000000000000000000"
+          },
+          {
+            "owner": "Mx072175eaaa18a211afefa6b623101813b9dcd000",
+            "coin": "MNT",
+            "value": "99000000000000000000",
+            "bip_value": "99000000000000000000"
+          },
+          {
+            "owner": "Mxd9f04f33b1df0ca3afb3167915dc9b054a2aac0e",
+            "coin": "MNT",
+            "value": "500000000000000000000",
+            "bip_value": "500000000000000000000"
+          },
+          {
+            "owner": "Mx5edf1b67ce7d9587a17be2e3e6b547a4b18cc5d9",
+            "coin": "MNT",
+            "value": "200000000000000000000",
+            "bip_value": "200000000000000000000"
+          },
+          {
+            "owner": "Mxbc8cb0459ba6487a34ac7f0f2f4891f687795efe",
+            "coin": "AIRCOIN",
+            "value": "1000000000000000000000",
+            "bip_value": "100000000000000000"
+          },
+          {
+            "owner": "Mx3c57a889ec01714f26477f3758ee3b5c08bcabd3",
+            "coin": "SHSCOIN",
+            "value": "33000000000000000000",
+            "bip_value": "6457945345447011691"
+          },
+          {
+            "owner": "Mx3c57a889ec01714f26477f3758ee3b5c08bcabd3",
+            "coin": "MNT",
+            "value": "104000000000000000000",
+            "bip_value": "104000000000000000000"
+          },
+          {
+            "owner": "Mxc44acf5cc623c5f59042104e0aa75225ad4291f2",
+            "coin": "MNT",
+            "value": "99000000000000000000",
+            "bip_value": "99000000000000000000"
+          },
+          {
+            "owner": "Mx2e53af00cfdaad73c72bce926622f43816cfbbe5",
+            "coin": "MNT",
+            "value": "500000000000000000000",
+            "bip_value": "500000000000000000000"
+          },
+          {
+            "owner": "Mx7629f5063404f2a5d1784a20d564e405c1946f64",
+            "coin": "MINTERONE",
+            "value": "1000000000000000000",
+            "bip_value": "5403194305334968825891"
+          },
+          {
+            "owner": "Mx7629f5063404f2a5d1784a20d564e405c1946f64",
+            "coin": "SHSCOIN",
+            "value": "99930000000000000000",
+            "bip_value": "19555832677894541766"
+          },
+          {
+            "owner": "Mx402ae571baf665c72091db01b86ed5b6cf767187",
+            "coin": "MNT",
+            "value": "500000000000000000000",
+            "bip_value": "500000000000000000000"
+          },
+          {
+            "owner": "Mx8b918f3009e5f8fc12b6f38da6975809e11f9fdc",
+            "coin": "MNT",
+            "value": "500000000000000000000",
+            "bip_value": "500000000000000000000"
+          },
+          {
+            "owner": "Mxd78ea777ce6a879343fe4d72667ac3444d942624",
+            "coin": "MNT",
+            "value": "500000000000000000000",
+            "bip_value": "500000000000000000000"
+          },
+          {
+            "owner": "Mxf14cf0d97df2b7e4ae6d555b3593f2c3e5049a3e",
+            "coin": "MNT",
+            "value": "500000000000000000000",
+            "bip_value": "500000000000000000000"
+          },
+          {
+            "owner": "Mxdbb073a733065f7f849023fa437f09a904d678a8",
+            "coin": "MNT",
+            "value": "500000000000000000000",
+            "bip_value": "500000000000000000000"
+          }
+        ],
+        "created_at_block": 737,
+        "status": 2
+      }
+    },
+    {
+      "accumulated_reward": "7726096963941570683",
+      "absent_times": 0,
+      "candidate": {
+        "candidate_address": "Mx2de05a1e9943951ddab6ffaf082ec95ee4923d77",
+        "total_stake": "66563000000000000000000",
+        "pub_key": "Mp17fa2a7a7c4338c14626c8c0af358b13c6cc4eecfa42c299573e0f2bde9c5980",
+        "commission": 10,
+        "stakes": [
+          {
+            "owner": "Mx2de05a1e9943951ddab6ffaf082ec95ee4923d77",
+            "coin": "MNT",
+            "value": "2913000000000000000000",
+            "bip_value": "2913000000000000000000"
+          },
+          {
+            "owner": "Mx1bc1009b56c4c82722a90860e7ac1e53f6364bdb",
+            "coin": "MNT",
+            "value": "53450000000000000000000",
+            "bip_value": "53450000000000000000000"
+          },
+          {
+            "owner": "Mx567f9dbec298d387344b7001e0ff6c8bb7b51d6f",
+            "coin": "MNT",
+            "value": "10000000000000000000000",
+            "bip_value": "10000000000000000000000"
+          },
+          {
+            "owner": "Mx072175eaaa18a211afefa6b623101813b9dcd000",
+            "coin": "MNT",
+            "value": "200000000000000000000",
+            "bip_value": "200000000000000000000"
+          }
+        ],
+        "created_at_block": 2452,
+        "status": 2
+      }
+    },
+    {
+      "accumulated_reward": "5992562445418256558",
+      "absent_times": 0,
+      "candidate": {
+        "candidate_address": "Mxeec112b9a5f26693700065bea0b3791fd6299810",
+        "total_stake": "51628000000000000000000",
+        "pub_key": "Mp0aa91980d495fb1977125d8925e64dff42f5267bfb809695532f4092d3d31095",
+        "commission": 7,
+        "stakes": [
+          {
+            "owner": "Mxeec112b9a5f26693700065bea0b3791fd6299810",
+            "coin": "MNT",
+            "value": "51628000000000000000000",
+            "bip_value": "51628000000000000000000"
+          }
+        ],
+        "created_at_block": 6621,
+        "status": 2
+      }
+    },
+    {
+      "accumulated_reward": "4816748732184237479",
+      "absent_times": 0,
+      "candidate": {
+        "candidate_address": "Mxb19b916efb8c80428ddff59884090fe8dca7f53a",
+        "total_stake": "41497957811910797647302",
+        "pub_key": "Mp3de754ecb45f4a6d6fc6ee7c0915335deaf7281b52d6cf607721043ff8fbfc66",
+        "commission": 7,
+        "stakes": [
+          {
+            "owner": "Mxb19b916efb8c80428ddff59884090fe8dca7f53a",
+            "coin": "MNT",
+            "value": "14737100000000000000000",
+            "bip_value": "14737100000000000000000"
+          },
+          {
+            "owner": "Mxea866082a15523321c54822967583dc44de906f6",
+            "coin": "MNT",
+            "value": "9225000000000000000000",
+            "bip_value": "9225000000000000000000"
+          },
+          {
+            "owner": "Mx567f9dbec298d387344b7001e0ff6c8bb7b51d6f",
+            "coin": "MNT",
+            "value": "9900000000000000000000",
+            "bip_value": "9900000000000000000000"
+          },
+          {
+            "owner": "Mxea866082a15523321c54822967583dc44de906f6",
+            "coin": "TALERCOIN",
+            "value": "500000000000000000000",
+            "bip_value": "358850371995752268919"
+          },
+          {
+            "owner": "Mxb19b916efb8c80428ddff59884090fe8dca7f53a",
+            "coin": "TALERCOIN",
+            "value": "10000000000000000000000",
+            "bip_value": "7177007439915045378383"
+          },
+          {
+            "owner": "Mx5edf1b67ce7d9587a17be2e3e6b547a4b18cc5d9",
+            "coin": "MNT",
+            "value": "100000000000000000000",
+            "bip_value": "100000000000000000000"
+          }
+        ],
+        "created_at_block": 2414,
+        "status": 2
+      }
+    },
+    {
+      "accumulated_reward": "4121759979993948638",
+      "absent_times": 0,
+      "candidate": {
+        "candidate_address": "Mxd0eff6e8e4bd7e2c803191cdbbba23f547a916d5",
+        "total_stake": "35510389117401200000000",
+        "pub_key": "Mp1043d80d0ba8531e869de04e5698deedc9c15c8baa028fc34fbd82bb2fd76bf2",
+        "commission": 10,
+        "stakes": [
+          {
+            "owner": "Mxd0eff6e8e4bd7e2c803191cdbbba23f547a916d5",
+            "coin": "MNT",
+            "value": "25709389117401200000000",
+            "bip_value": "25709389117401200000000"
+          },
+          {
+            "owner": "Mx567f9dbec298d387344b7001e0ff6c8bb7b51d6f",
+            "coin": "MNT",
+            "value": "9801000000000000000000",
+            "bip_value": "9801000000000000000000"
+          }
+        ],
+        "created_at_block": 600,
+        "status": 2
+      }
+    },
+    {
+      "accumulated_reward": "2784449920646520424",
+      "absent_times": 0,
+      "candidate": {
+        "candidate_address": "Mx27807b83d3fda5a0f0bbb4b4f8dde8e6a0a0ba03",
+        "total_stake": "23989000000000000000000",
+        "pub_key": "Mp32b79c72d940ebbcff239e26ebf618a96acdb9fe99ff4ce5c60f3a3b19d4c4c5",
+        "commission": 10,
+        "stakes": [
+          {
+            "owner": "Mx27807b83d3fda5a0f0bbb4b4f8dde8e6a0a0ba03",
+            "coin": "MNT",
+            "value": "13890000000000000000000",
+            "bip_value": "13890000000000000000000"
+          },
+          {
+            "owner": "Mx567f9dbec298d387344b7001e0ff6c8bb7b51d6f",
+            "coin": "MNT",
+            "value": "10000000000000000000000",
+            "bip_value": "10000000000000000000000"
+          },
+          {
+            "owner": "Mx45f0705a6bc7b7df615dbcde574422331cf62d0e",
+            "coin": "MNT",
+            "value": "99000000000000000000",
+            "bip_value": "99000000000000000000"
+          }
+        ],
+        "created_at_block": 2542,
+        "status": 2
+      }
+    },
+    {
+      "accumulated_reward": "289001463598200290",
+      "absent_times": 0,
+      "candidate": {
+        "candidate_address": "Mx4e0ca5d8707f82f3e02740513a4eb12ad5c115fc",
+        "total_stake": "2489847656749197146836",
+        "pub_key": "Mp88e45f0a1e48b09d60e3465b2c3b3c0592ac552ef330611ad813106a381a786d",
+        "commission": 10,
+        "stakes": [
+          {
+            "owner": "Mx4e0ca5d8707f82f3e02740513a4eb12ad5c115fc",
+            "coin": "MNT",
+            "value": "42000000000000000000",
+            "bip_value": "42000000000000000000"
+          },
+          {
+            "owner": "Mx072175eaaa18a211afefa6b623101813b9dcd000",
+            "coin": "MNT",
+            "value": "300000000000000000000",
+            "bip_value": "300000000000000000000"
+          },
+          {
+            "owner": "Mx072175eaaa18a211afefa6b623101813b9dcd000",
+            "coin": "SHSCOIN",
+            "value": "500000000000000000000",
+            "bip_value": "97847656749197146836"
+          },
+          {
+            "owner": "Mxd9f04f33b1df0ca3afb3167915dc9b054a2aac0e",
+            "coin": "MNT",
+            "value": "300000000000000000000",
+            "bip_value": "300000000000000000000"
+          },
+          {
+            "owner": "Mx402ae571baf665c72091db01b86ed5b6cf767187",
+            "coin": "MNT",
+            "value": "500000000000000000000",
+            "bip_value": "500000000000000000000"
+          },
+          {
+            "owner": "Mx8b918f3009e5f8fc12b6f38da6975809e11f9fdc",
+            "coin": "MNT",
+            "value": "200000000000000000000",
+            "bip_value": "200000000000000000000"
+          },
+          {
+            "owner": "Mxd78ea777ce6a879343fe4d72667ac3444d942624",
+            "coin": "MNT",
+            "value": "200000000000000000000",
+            "bip_value": "200000000000000000000"
+          },
+          {
+            "owner": "Mxf14cf0d97df2b7e4ae6d555b3593f2c3e5049a3e",
+            "coin": "MNT",
+            "value": "250000000000000000000",
+            "bip_value": "250000000000000000000"
+          },
+          {
+            "owner": "Mxdbb073a733065f7f849023fa437f09a904d678a8",
+            "coin": "MNT",
+            "value": "500000000000000000000",
+            "bip_value": "500000000000000000000"
+          },
+          {
+            "owner": "Mx2e53af00cfdaad73c72bce926622f43816cfbbe5",
+            "coin": "MNT",
+            "value": "100000000000000000000",
+            "bip_value": "100000000000000000000"
+          }
+        ],
+        "created_at_block": 33034,
+        "status": 2
+      }
+    },
+    {
+      "accumulated_reward": "15089353023637816",
+      "absent_times": 0,
+      "candidate": {
+        "candidate_address": "Mx586da70f94a71a45d08f43f27e7c2c9ff651cedd",
+        "total_stake": "130000000000000000000",
+        "pub_key": "Mpf8e2a095f7fa489c3e50003396de4e61ec3adccc9a987089c8833a975bb5a239",
+        "commission": 98,
+        "stakes": [
+          {
+            "owner": "Mx586da70f94a71a45d08f43f27e7c2c9ff651cedd",
+            "coin": "MNT",
+            "value": "130000000000000000000",
+            "bip_value": "130000000000000000000"
+          }
+        ],
+        "created_at_block": 3003,
+        "status": 2
+      }
+    }
+  ]
+}
