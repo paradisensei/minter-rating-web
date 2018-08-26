@@ -1,0 +1,45 @@
+{
+  "code": 0,
+  "result": {
+    "candidate": {
+      "candidate_address": "Mxee81347211c72524338f9680072af90744333146",
+      "total_stake": "5001074065007203878000765",
+      "pub_key": "Mp4ae1ee73e6136c85b0ca933a9a1347758a334885f10b3238398a67ac2eb153b8",
+      "commission": 10,
+      "stakes": [
+        {
+          "owner": "Mxee81347211c72524338f9680072af90744333146",
+          "coin": "MNT",
+          "value": "5000000000000000000000000",
+          "bip_value": "5000000000000000000000000"
+        },
+        {
+          "owner": "Mx072175eaaa18a211afefa6b623101813b9dcd000",
+          "coin": "MNT",
+          "value": "398000000000000000000",
+          "bip_value": "398000000000000000000"
+        },
+        {
+          "owner": "Mx072175eaaa18a211afefa6b623101813b9dcd000",
+          "coin": "SHSCOIN",
+          "value": "495000000000000000000",
+          "bip_value": "110655007203878000765"
+        },
+        {
+          "owner": "Mxc8f4ab1a7c0082b32fc6b6ae715f74ceb01b6574",
+          "coin": "MNT",
+          "value": "365410000000000000000",
+          "bip_value": "365410000000000000000"
+        },
+        {
+          "owner": "Mxcbb5f916b74ec573318ba8ad2cbcc1771ce3e124",
+          "coin": "MNT",
+          "value": "200000000000000000000",
+          "bip_value": "200000000000000000000"
+        }
+      ],
+      "created_at_block": 1,
+      "status": 2
+    }
+  }
+}

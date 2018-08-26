@@ -51,7 +51,7 @@
                 <br>
                 <b>Commission (%)</b> = commission for delegators
                 <br>
-                <b>Uptime (%)</b> = <i>number of blocks missed by current node</i> <b>/</b> <i>maximum number of missed blocks until stake slash</i>
+                <b>Uptime (%)</b> = 100% - (<i>number of blocks missed by current node</i> <b>/</b> <i>maximum number of missed blocks until stake slash</i>)
             </div>
         </b-card>
         <b-table responsive :fields="fields" :items="nodes">

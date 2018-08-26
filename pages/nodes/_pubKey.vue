@@ -1,18 +1,18 @@
 <script>
-    import {getTitle} from '~/assets/utils';
+    import {getTitle, roundMoney} from '~/assets/utils';
     import BackButton from '~/components/BackButton';
+    import {getNodeProfile} from "~/api";
 
     export default {
         components: {
             BackButton,
         },
         filters: {
+            number: roundMoney,
+            pretty: (num) => Math.round(num)
         },
         asyncData({ params, error }) {
-            return {
-                pubKey: params.pubKey,
-                link: `https://testnet.explorer.minter.network/validator/${params.pubKey}`
-            };
+            return getNodeProfile(params.pubKey);
         },
         head() {
             const title = getTitle('Profile');
@@ -29,8 +29,7 @@
 
 <template>
     <div>
-        <b-card title="Coming soon"
-                sub-title="Is under development">
+        <b-card>
             <p class="card-text">
                 Any suggestions regarding node profile page are highly appreciated.
             </p>
@@ -43,11 +42,31 @@
                 </h1>
             </div>
             <dl>
-                <dt>Pub key</dt>
+                <dt>Address</dt>
                 <dd class="u-select-all">
-                    <a :href="link" target="_blank" class="link--default">
+                    <a :href="'https://testnet.explorer.minter.network/address/' + address"
+                       target="_blank" class="link--default">
+                        {{ address }}
+                    </a>
+                </dd>
+                <dt>Public key</dt>
+                <dd class="u-select-all">
+                    <a :href="'https://testnet.explorer.minter.network/validator/' + pubKey"
+                       target="_blank" class="link--default">
                         {{ pubKey }}
                     </a>
+                </dd>
+                <dt>Total stake</dt>
+                <dd class="u-select-all">
+                    {{totalStake | pretty}} MNT
+                </dd>
+                <dt>Own stake</dt>
+                <dd class="u-select-all">
+                    {{own_stake | pretty}} MNT ({{own_stake_perc | number}}% of total stake)
+                </dd>
+                <dt>Delegated stake</dt>
+                <dd class="u-select-all">
+                    {{delegated_stake | pretty}} MNT ({{delegated_stake_perc | number}}% of total stake)
                 </dd>
             </dl>
         </section>

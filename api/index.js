@@ -2,6 +2,34 @@ import {mainnet, testnet} from '~/api/axios';
 import {MAINNET, DECIMALS} from "~/assets/variables";
 import {getTimeDistance, shortFilter} from "~/assets/utils";
 
+export function getNodeProfile(pubKey) {
+    return testnet.get(`candidate/${pubKey}`)
+        .then(response => {
+            const node = response.data.result.candidate;
+            const node_address = node.candidate_address;
+            const total_stake = node.total_stake / 10**DECIMALS;
+            let own_stake = 0;
+            let delegated_stake = 0;
+            node.stakes.forEach(s => {
+                const value = s.bip_value / 10 ** DECIMALS;
+                if (s.owner === node_address) {
+                    own_stake += value;
+                } else {
+                    delegated_stake += value;
+                }
+            });
+            return {
+                address: node_address,
+                pubKey: node.pub_key,
+                own_stake,
+                own_stake_perc: own_stake / total_stake * 100,
+                delegated_stake,
+                delegated_stake_perc: delegated_stake / total_stake * 100,
+                totalStake: total_stake
+            }
+        })
+}
+
 export function getNodes(type) {
     const axios = type === MAINNET ? mainnet : testnet;
     let nodes;
