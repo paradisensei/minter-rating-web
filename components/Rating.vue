@@ -1,12 +1,13 @@
 <script>
     import {MAINNET, MAINNET_COIN_NAME, TESTNET_COIN_NAME} from "~/assets/variables";
-    import {thousandsFilter, roundMoney, roundUp} from "~/assets/utils";
+    import {roundMoney, roundUp} from "~/assets/utils";
+    import TableLink from '~/components/TableLink'
 
     export default {
+        components: {TableLink},
         filters: {
-            thousands: thousandsFilter,
             number: roundMoney,
-            roundUp,
+            pretty: (num) => Math.round(num)
         },
         props: {
             network: {
@@ -19,15 +20,16 @@
             },
         },
         data () {
-            const coinName = this.network === MAINNET ? MAINNET_COIN_NAME : TESTNET_COIN_NAME;
             return {
                 fields: [
+                    { key: 'index', label: 'Rating' },
                     { key: 'display_pub_key', label: 'Public key' },
-                    { key: 'total_stake', label: `Total stake (${coinName})` },
-                    { key: 'reward', label: `Accumulated reward (${coinName})`},
-                    { key: 'delegates', label: 'Delegates' },
-                    { key: 'uptime', label: 'Uptime (%)' },
-                    { key: 'display_age', label: 'Age' }
+                    { key: 'voting_power', label: 'Voting power' },
+                    { key: 'delegated_stakes', label: 'Delegated stakes' },
+                    { key: 'reward', label: 'Accumulated reward'},
+                    { key: 'display_age', label: 'Age' },
+                    { key: 'commission', label: 'Commission' },
+                    { key: 'uptime', label: 'Uptime' }
                 ]
             }
         }
@@ -36,127 +38,51 @@
 
 <template>
     <div>
-        <b-table striped hover :fields="fields" :items="nodes">
+        <b-card title="Explainer"
+                sub-title="Rating criteria by priority from highest to lowest">
+            <div>
+                <b>Voting power (%)</b> = <i>current node's total stake</i> <b>/</b> <i>all active nodes' total stake</i>
+                <br>
+                <b>Delegated stakes</b> = number of stakes delegated to current node by different token holders
+                <br>
+                <b>Accumulated reward (MNT)</b> = reward waiting to be sent to current node and its delegators within 12 blocks
+                <br>
+                <b>Age</b> = time passed since current node has declared its candidacy
+                <br>
+                <b>Commission (%)</b> = commission for delegators
+                <br>
+                <b>Uptime (%)</b> = <i>number of blocks missed by current node</i> <b>/</b> <i>maximum number of missed blocks until stake slash</i>
+            </div>
+        </b-card>
+        <b-table responsive :fields="fields" :items="nodes">
+            <template slot="index" slot-scope="data">
+                <TableLink :link-text="(data.index + 1)"
+                           :link-path="'nodes/' + data.item.pub_key"/>
+            </template>
             <template slot="display_pub_key" slot-scope="data">
-                <b-link :href="'https://testnet.explorer.minter.network/validator/' + data.item.pub_key">
-                    {{data.item.display_pub_key}}
-                </b-link>
+                <a :href="'https://testnet.explorer.minter.network/validator/' + data.item.pub_key"
+                   target="_blank" class="link--default">
+                    {{ data.value }}
+                </a>
+            </template>
+            <template slot="voting_power" slot-scope="data">
+                {{data.value | number}}%
+            </template>
+            <template slot="reward" slot-scope="data">
+                {{data.value | pretty}} MNT
+            </template>
+            <template slot="display_age" slot-scope="data">
+                <a :href="'https://testnet.explorer.minter.network/blocks/' + data.item.created_at"
+                   target="_blank" class="link--default">
+                    {{ data.value }}
+                </a>
+            </template>
+            <template slot="uptime" slot-scope="data">
+                {{data.value | number}}%
+            </template>
+            <template slot="commission" slot-scope="data">
+                {{data.value | number}}%
             </template>
         </b-table>
-
     </div>
-    <!--<div class="u-grid u-grid&#45;&#45;vertical-margin">-->
-        <!--<section class="u-cell u-cell&#45;&#45;medium&#45;&#45;1-2">-->
-            <!--<div class="index-stats panel panel__section">-->
-                <!--<div class="u-grid u-grid&#45;&#45;vertical-margin">-->
-                    <!--<div class="u-cell u-cell&#45;&#45;1-2">-->
-                        <!--<div class="index-stats__name">Status</div>-->
-                        <!--<div class="index-stats__value index-stats__value&#45;&#45;primary" :class=" stats.status === 'updating' ? 'index-stats__yellow' : stats.status === 'active' ? 'index-stats__green' : 'index-stats__red'">-->
-                            <!--{{ stats.status }}-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="u-cell u-cell&#45;&#45;1-2">-->
-                        <!--<div class="index-stats__name">Uptime</div>-->
-                        <!--<div class="index-stats__value index-stats__value&#45;&#45;primary">{{ stats.uptime | number }}%</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</section>-->
-        <!--<div class="u-cell u-cell&#45;&#45;medium&#45;&#45;1-2 u-hidden-medium-down"></div>-->
-        <!--<section class="u-cell u-cell&#45;&#45;medium&#45;&#45;1-2">-->
-            <!--<div class="panel">-->
-                <!--<div class="panel__section panel__header">-->
-                    <!--<h2 class="panel__header-title panel__title">-->
-                        <!--<img class="panel__header-title-icon" src="/img/icon-block.svg" width="40" height="40" alt="" role="presentation">-->
-                        <!--Blocks-->
-                    <!--</h2>-->
-                <!--</div>-->
-                <!--<div class="panel__section">-->
-                    <!--<div class="u-grid u-grid&#45;&#45;vertical-margin">-->
-                        <!--<div class="u-cell u-cell&#45;&#45;1-2">-->
-                            <!--<div class="index-stats__name">Number of blocks</div>-->
-                            <!--<div class="index-stats__value index-stats__value&#45;&#45;primary">{{ stats.numberOfBlocks | thousands }}</div>-->
-                        <!--</div>-->
-                        <!--<div class="u-cell u-cell&#45;&#45;1-2">-->
-                            <!--<div class="index-stats__name">Speed of blocks (24h)</div>-->
-                            <!--<div class="index-stats__value index-stats__value&#45;&#45;primary">{{ stats.blockSpeed24h | number }}s</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</section>-->
-        <!--<section class="u-cell u-cell&#45;&#45;medium&#45;&#45;1-2">-->
-            <!--<div class="panel">-->
-                <!--<div class="panel__section panel__header">-->
-                    <!--<h2 class="panel__header-title panel__title">-->
-                        <!--<img class="panel__header-title-icon" src="/img/icon-transaction.svg" width="40" height="40" alt="" role="presentation">-->
-                        <!--Transactions-->
-                    <!--</h2>-->
-                <!--</div>-->
-                <!--<div class="panel__section">-->
-                    <!--<div class="u-grid u-grid&#45;&#45;vertical-margin">-->
-                        <!--<div class="u-cell u-cell&#45;&#45;1-2">-->
-                            <!--<div class="index-stats__name"># of transactions (24h)</div>-->
-                            <!--<div class="index-stats__value index-stats__value&#45;&#45;primary">{{ stats.tx24hCount | thousands }}</div>-->
-                        <!--</div>-->
-                        <!--<div class="u-cell u-cell&#45;&#45;1-2">-->
-                            <!--<div class="index-stats__name"># per second (24h)</div>-->
-                            <!--<div class="index-stats__value index-stats__value&#45;&#45;primary">{{ stats.txPerSecond | number }}</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</section>-->
-
-        <!--<section class="u-cell u-cell&#45;&#45;medium&#45;&#45;1-2">-->
-            <!--<div class="panel">-->
-                <!--<div class="panel__section panel__header">-->
-                    <!--<h2 class="panel__header-title panel__title">-->
-                        <!--<img class="panel__header-title-icon" src="/img/icon-validator.svg" width="40" height="40" alt="" role="presentation">-->
-                        <!--Validators-->
-                    <!--</h2>-->
-                <!--</div>-->
-                <!--<div class="panel__section">-->
-                    <!--<div class="u-grid u-grid&#45;&#45;vertical-margin">-->
-                        <!--<div class="u-cell u-cell&#45;&#45;1-2">-->
-                            <!--<div class="index-stats__name">Active validators</div>-->
-                            <!--<div class="index-stats__value index-stats__value&#45;&#45;primary">{{ stats.activeValidators }}</div>-->
-                        <!--</div>-->
-                        <!--<div class="u-cell u-cell&#45;&#45;1-2">-->
-                            <!--<div class="index-stats__name">Total # of validators</div>-->
-                            <!--<div class="index-stats__value index-stats__value&#45;&#45;primary">{{ stats.totalValidatorsCount }}</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</section>-->
-        <!--<section class="u-cell u-cell&#45;&#45;medium&#45;&#45;1-2">-->
-            <!--<div class="panel">-->
-                <!--<div class="panel__section panel__header">-->
-                    <!--<h2 class="panel__header-title panel__title">-->
-                        <!--<img class="panel__header-title-icon" src="/img/icon-commission.svg" width="40" height="40" alt="" role="presentation">-->
-                        <!--Commission-->
-                    <!--</h2>-->
-                <!--</div>-->
-                <!--<div class="panel__section">-->
-                    <!--<div class="u-grid u-grid&#45;&#45;vertical-margin">-->
-                        <!--<div class="u-cell u-cell&#45;&#45;1-2">-->
-                            <!--<div class="index-stats__name">Average per transaction (24h)</div>-->
-                            <!--<div class="index-stats__value index-stats__value&#45;&#45;primary">-->
-                                <!--<span class="index-stats__value-text">{{ stats.averageTxCommission | roundUp | number }}</span>-->
-                                <!--<span class="index-stats__sub-value">{{ coinName }}</span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                        <!--<div class="u-cell u-cell&#45;&#45;1-2">-->
-                            <!--<div class="index-stats__name">Total commission (24h)</div>-->
-                            <!--<div class="index-stats__value index-stats__value&#45;&#45;primary">-->
-                                <!--<span class="index-stats__value-text">{{ stats.totalCommission | roundUp | number | thousands }}</span>-->
-                                <!--<span class="index-stats__sub-value">{{ coinName }}</span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</section>-->
-    <!--</div>-->
 </template>

@@ -1,14 +1,19 @@
 import {mainnet, testnet} from '~/api/axios';
-import {MAINNET} from "~/assets/variables";
-import {getTimeDistance} from "~/assets/utils";
+import {MAINNET, DECIMALS} from "~/assets/variables";
+import {getTimeDistance, shortFilter} from "~/assets/utils";
 
 export function getNodes(type) {
     const axios = type === MAINNET ? mainnet : testnet;
     let nodes;
+    let nodes_total_stake = 0;
     return axios.get('validators')
         .then(response => {
-            // process active nodes info
+            // filter out inactive nodes
             nodes = response.data.result.filter(n => n.candidate.status === 2);
+            // calculate total stake of all active nodes
+            nodes.forEach(n => {
+                nodes_total_stake += n.candidate.total_stake / 10**DECIMALS;
+            });
             return Promise.all(
                 nodes.map(n => axios.get('block/' + n.candidate.created_at_block))
             );
@@ -17,49 +22,47 @@ export function getNodes(type) {
             return nodes
                 .map((n, i) => {
                     const pub_key = n.candidate.pub_key;
-                    const display_pub_key =
-                        pub_key.substr(0, 5) +
-                        '...' +
-                        pub_key.substr(pub_key.length - 5, 5);
-                    const age = new Date(responses[i].data.result.time);
-                    const display_age = getTimeDistance(age);
+                    const total_stake = n.candidate.total_stake / 10**DECIMALS;
+                    const voting_power = total_stake / nodes_total_stake * 100;
+                    const block = responses[i].data.result;
+                    const age = new Date(block.time);
                     return {
                         pub_key,
-                        display_pub_key,
-                        reward: n.accumulated_reward / 10**18,
+                        display_pub_key: shortFilter(pub_key),
+                        voting_power,
+                        reward: n.accumulated_reward / 10**DECIMALS,
                         uptime: 100 - n.absent_times / 12,
-                        absent: n.absent_times,
-                        total_stake: n.candidate.total_stake / 10**18,
                         commission: n.candidate.commission,
-                        delegates: n.candidate.stakes.length - 1,
+                        delegated_stakes: n.candidate.stakes.length - 1,
                         age,
-                        display_age
+                        display_age: getTimeDistance(age),
+                        created_at: block.height
                     }
                 })
                 .sort(compare)
         })
 }
 
-const compare = (v1, v2) => {
-    if (v1.total_stake === v2.total_stake) {
-        if (v1.reward === v2.reward) {
-            if (v1.delegates === v2.delegates) {
-                if (v1.commission === v2.commission) {
-                    if (v1.age === v2.age) {
-                        return v1.absent - v2.absent
+const compare = (n1, n2) => {
+    if (n1.voting_power === n2.voting_power) {
+        if (n1.delegated_stakes === n2.delegated_stakes) {
+            if (n1.reward === n2.reward) {
+                if (n1.age === n2.age) {
+                    if (n1.commission === n2.commission) {
+                        return n2.uptime - n1.uptime
                     } else {
-                        return v1.age - v2.age;
+                        return n1.commission - n2.commission;
                     }
                 } else {
-                    return v2.commission - v1.commission;
+                    return n1.age - n2.age;
                 }
             } else {
-                return v2.delegates - v1.delegates;
+                return n2.reward - n1.reward;
             }
         } else {
-            return v2.reward - v1.reward;
+            return n2.delegated_stakes - n1.delegated_stakes;
         }
     } else {
-        return v2.total_stake - v1.total_stake;
+        return n2.voting_power - n1.voting_power;
     }
 };

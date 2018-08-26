@@ -1,13 +1,6 @@
-import thousands from 'thousands';
-import decode from 'entity-decode';
-import {MAINNET, TESTNET} from "~/assets/variables";
+import {MAINNET, TESTNET, BASE_TITLE} from "~/assets/variables";
 import formatDistanceStrict from 'date-fns/esm/formatDistanceStrict'
 import toDate from 'date-fns/esm/toDate';
-
-export function thousandsFilter(value) {
-    return decode(thousands(value, '&thinsp;'));
-}
-
 
 /**
  * @param {number} num
@@ -95,4 +88,17 @@ export function getTimeDistance(timestamp) {
     const distance = formatDistanceStrict(toDate(timestamp), new Date());
 
     return distance && distance !== 'Invalid Date' ? distance : false;
+}
+
+export function shortFilter(value, endLength = 6, minLengthToShort) {
+    const startLength = endLength + 'Mx'.length - 1;
+    minLengthToShort = minLengthToShort || startLength + endLength;
+    value = value.toString();
+    const isLong = value.length > minLengthToShort;
+
+    return isLong ? value.substr(0, startLength) + '…' + value.substr(-endLength) : value;
+}
+
+export function getTitle(text) {
+    return BASE_TITLE + ' | ' + text;
 }
