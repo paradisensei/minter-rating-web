@@ -8,7 +8,7 @@
     "production": "npm run generate",
     "dev": "gulp & nuxt --spa",
     "build": "gulp once && nuxt build --spa",
-    "start": "nuxt start",
+    "start": "nuxt start --spa",
     "generate": "gulp once && nuxt generate",
     "analyze": "gulp once && nuxt generate --analyze",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
@@ -51,5 +51,10 @@
     "last 2 versions",
     "Firefox ESR",
     "not dead"
-  ]
+  ],
+  "config": {
+    "nuxt": {
+      "host": "0.0.0.0"
+    }
+  }
 }

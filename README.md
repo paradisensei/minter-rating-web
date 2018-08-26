@@ -1,6 +1,6 @@
 # Minter Nodes Rating Website
 
-This repository contain the code for the suggested Minter Nodes Rating website [rating.minter.network](http://rating-minter-network.ml)
+This repository contain the code for the suggested Minter Nodes Rating website [rating.minter.network](http://rating-minter-network.ml/testnet)
 
 ## Deployment script
 
